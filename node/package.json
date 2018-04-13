@@ -1,0 +1,19 @@
+{
+  "name": "1122",
+  "version": "1.0.0",
+  "description": "dddf",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "afsddsaf"
+  },
+  "author": "",
+  "license": "ISC"
+}
