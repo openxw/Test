@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<title>Vue</title>  
+
+</head>  
+<body>  
+<div id="app">  
+    <p>苹果的数量是<input type="number" v-model.number="num1">个! <button v-on:click=" num1 += 1">add</button> </p>
+    <p>香蕉的数量是<input type="number" v-model.number="num2">个! <button v-on:click="num2 = num2 + 1">add</button> </p>  
+    <p>商品的总数是:{{totalNum}}</p>
+    <button v-on:click="modifyInfo">重置</button>  
+</div>  
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.js"></script>        
+<script>  
+const app = new Vue({  
+    el: '#app',  
+    data:{  
+        num1 :'3' ,  
+        num2 : '4',  
+        totalNum : "7",
+    },  
+    
+    methods:{  
+        modifyInfo:function(){  
+            this.num1 = '3';  
+            this.num2 = '4';  
+        }  
+    } ,
+
+})  ;
+
+</script>  
+
+</body>  
+</html>  
